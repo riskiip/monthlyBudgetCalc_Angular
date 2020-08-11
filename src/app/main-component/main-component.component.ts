@@ -19,4 +19,9 @@ export class MainComponentComponent implements OnInit {
     this.budgetItems.push(newItem);
   }
 
+  deteleItem(item: BudgetItem) {
+    const index = this.budgetItems.indexOf(item);
+    this.budgetItems.splice(index, 1);
+  }
+
 }
